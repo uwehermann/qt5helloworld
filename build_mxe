@@ -1,0 +1,6 @@
+#!/bin/sh
+export PATH=$HOME/mxe-git/usr/bin:$PATH
+git clone https://github.com/uwehermann/qt5helloworld.git qt5helloworld_mxe
+cd qt5helloworld_mxe
+i686-w64-mingw32.static.posix-cmake .
+make VERBOSE=1
